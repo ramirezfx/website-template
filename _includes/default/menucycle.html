@@ -1,0 +1,8 @@
+{% assign name_page = "" %}
+
+{% for page in site.pages %}
+    {% unless page.title == null or page.hide or name_page contains page.title %}
+      <!--$CYCLECONTENTHERE-->
+    {% endunless %}
+    {% assign name_page = page.title | append: name_page %}
+{% endfor %}
