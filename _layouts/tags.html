@@ -30,7 +30,7 @@ layout: page
         <b><h2 id="{{ tag | cgi_escape }}" class="tag-anchor">
 
               <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw fa-sm"></i> {{ tag }}</a>
-              <a href="#{{ page.title }}" style="float: right"><h6><i class="fas fa-chevron-up fa-lg" aria-hidden="true"> </i></h6> </a>
+
 
         </h2></b>
 
@@ -45,7 +45,7 @@ layout: page
                     <i class="far fa-file-image" aria-hidden="true"></i>
                     {{ page.title }}
                 </a>
-                {% include blog/post_info.liquid date=page.date %}
+                {% include blog/post-info.html date=page.date %}
             </h5>
             {% endif %}
             {% endfor %}
