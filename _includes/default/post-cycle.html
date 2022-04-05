@@ -1,0 +1,9 @@
+{% for post in paginator.posts %}
+<!-- PUT IN YOUR CYCLING-CODE HERE
+Replace the links/text with These Variables Inside your Code:
+{{ post.url | relative_url }} = URL TO POST
+{{ post.thumbnail }} = THUMBNAIL OF THE POST
+{{ post.title }} = POST-TITLE
+{{ post.content | strip_html | truncate: '250' | escape }}<br /> = EXCERPT OF THE POST
+-->
+{% endfor %}
